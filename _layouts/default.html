@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="/assets/default.css">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+   
+          <!--<img src="{{ site.logo }}" alt="Logo" />-->
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <p class="view">
+        <a href="{{ "/" | absolute_url }}">blog</a><br/>
+        <a href="/resume">resume</a><br/>
+        <a href="/coursework">coursework</a><br/>
+        <a href="{{ site.github.owner_url }}">github profile</a><br/>
+        </p>
+
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages<br/>Theme originally by <a href="https://github.com/orderedlist">orderedlist</a>, edited by <a href="{{ site.github.owner_url }}">Skaszka</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
